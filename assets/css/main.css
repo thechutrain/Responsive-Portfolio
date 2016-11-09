@@ -23,7 +23,9 @@ body {
 
 .container {
   margin-bottom: 30px;
-  /*display: inline-block;*/
+  display: inline-block;
+  width: 100%;
+  /*opacity: 0;*/
 }
 
 /*
@@ -41,7 +43,7 @@ Layout - header + nav
 }
 .logo-wrapper{
   width: 650px;
-  margin-left: 50px;
+  margin-left: 25px;
   /*display: inline-block;*/
   /*border: 1px solid red;*/
   float: left;
@@ -57,7 +59,7 @@ Layout - header + nav
   line-height: 24px;
 }
 .nav-wrapper{
-  margin-left: 50px;
+  margin-left: 25px;
   float: left;
   /*display: inline-block;*/
   /*overflow: auto;*/
@@ -117,15 +119,26 @@ nav > ul > li > a:hover {
 Section Styling
 =============================================
 */
-section{
-  background: white;
+.section-wrapper{
   width: 650px;
+  /*padding: 20px;*/
+  overflow: auto;
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+section{
+  padding: 20px;
+  background: white;
+  /*width: 650px;
   padding: 20px;
   overflow: auto;
   float: left;
   margin-top: 25px;
   margin-left: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 25px;*/
 }
 
 /*
@@ -133,14 +146,24 @@ section{
 Aside Styling
 =============================================
 */
-aside {
-  background: white;
+.aside-wrapper {
   width: 270px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  /*padding: 20px;*/
+}
+
+aside {
+  padding: 20px;
+  background: white;
+/*  width: 270px;
   float: left;
   margin-top: 25px;
   margin-left: 50px;
   margin-bottom: 25px;
-  padding: 20px;
+  padding: 20px;*/
 }
 aside > h3 {
   text-align: center;
@@ -323,6 +346,10 @@ Media queries
 */
 /* Small view port width*/
 @media screen and (max-width: 640px){
+/*  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }*/
 
   /* Header styling */
   .header{
@@ -350,13 +377,12 @@ Media queries
   .section-wrapper, .aside-wrapper {
     width: 100%;
     display: inline-block;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin: 10px 0 20px 0;
+    padding: 0 30px 0 10px;
   }
   section, aside {
     width: 100%;
-    margin: 0;
+    margin: 0 10px 0 10px;
   }
   #about-me > img {
     float: none;
@@ -390,6 +416,10 @@ Media queries
 
 /* Medium view port width*/
 @media screen and (max-width: 768px) and (min-width: 641px){
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   /*header*/
   .header{
     position: relative;
@@ -421,13 +451,12 @@ Media queries
   .section-wrapper, .aside-wrapper {
     width: 100%;
     display: inline-block;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin: 10px 0 20px 0;
+    padding: 0 30px 0 10px;
   }
   section, aside {
     width: 100%;
-    margin: 0;
+    margin: 0 10px 0 10px;
   }
   .logo-container{
     width: 50%;
