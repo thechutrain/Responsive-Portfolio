@@ -315,29 +315,12 @@ img {
 Media queries
 =============================================
 */
-/* Large view port width*/
-@media screen and (max-width: 980px){
-
-
-  footer{
-    background: red;
-  }
-}
-
-/* Medium view port width*/
-@media screen and (max-width: 768px){
-  footer{
-    background: blue;
-  }
-}
-
-
 /* Small view port width*/
 @media screen and (max-width: 640px){
 
   /* Header styling */
   .header{
-    min-height: 50px;
+    /*min-height: 50px;*/
   }
   .logo-wrapper{
     width: 100%;
@@ -349,6 +332,12 @@ Media queries
   .nav-wrapper{
     width: 100%;
     margin: 0;
+  }
+  nav > ul > li {
+    padding: 5px;
+  }
+  nav > ul > li > a {
+    font-size: 16px;
   }
 
   /* Body styling */
@@ -375,8 +364,8 @@ Media queries
 
   /* font sizing */
   p{
-    font-size: 1.25em;
-    line-height: 24px;
+/*    font-size: 1.25em;
+    line-height: 24px;*/
   }
   h2{
     font-size: 36px;
@@ -389,6 +378,82 @@ Media queries
   }
   footer{
     background: green;
+  } 
+} /* closes media query for max-width: 640px*/
+
+
+/* Medium view port width*/
+@media screen and (max-width: 768px) and (min-width: 641px){
+  /*header*/
+  .header{
+    position: relative;
   }
-  
+  .logo-wrapper, .nav-wrapper{
+    margin: 0;
+  }
+  .logo-wrapper {
+    width: 40%;
+  }
+  .logo-name {
+    width: 100%;
+  }
+  .nav-wrapper{
+    width: 60%;
+    position: absolute;
+    bottom: 0px;
+    right: -30px;
+
+  }
+  nav > ul > li {
+    padding: 5px;
+  }
+  nav > ul > li > a {
+    font-size: 16px;
+  }
+
+  /* Body styling */
+  .section-wrapper, .aside-wrapper {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  section, aside {
+    width: 100%;
+    margin: 0;
+  }
+  .logo-container{
+    width: 50%;
+  }
+  .container {
+    margin-bottom: 30px;
+  }
+
+  /* font sizing */
+  p{
+    font-size: 1.05em;
+    line-height: 20px;
+  }
+  h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  h3{
+    font-size: 28px;
+    line-height: 24px;
+  }
+  footer{
+    background: blue;
+  }
+}
+
+/* Large view port width*/
+@media screen and (max-width: 980px) and (min-width: 769px){
+
+
+  footer{
+    background: red;
+  }
 }
