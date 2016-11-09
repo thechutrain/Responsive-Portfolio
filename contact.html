@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js" async></script>
+  <title>Welcome to My Portfolio</title>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-wrapper">
+    <div class="logo-name">Alan Chu</div>
+  </div>
+  <!-- Navigation bar here -->
+  <div class="nav-wrapper">
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>  
+<!-- closes header div -->
+</div>
+
+<div class="container">
+  <section id="contact-me">
+    <!-- heading and horizontal line -->
+    <h2>Contact Me</h2>
+    <hr>
+    <form action="/" method="GET">
+      <div class="wrapper"><label for="user_name"> Name </label></div>
+      <div class="wrapper"><input type="text" id="user_name" placeholder="John Doe" size="80"></div>
+      <div class="wrapper"><label for="user_email"> Email</label></div>
+      <div class="wrapper"><input type="email" id="user_email" placeholder="example@gmail.com" size="80"></div>
+      <div class="wrapper"><label for="user_message"> Message </label></div>
+      <div class="wrapper"><textarea id="user_message" cols="80" rows="10"></textarea></div>
+      <button type="submit" class="submit-btn">Submit</button>
+      
+    </form>
+  </section>
+
+    <!-- Aside for connecting with me -->
+  <aside>
+    <h3>Connect with Me</h3>
+    <hr>
+    <div class="logo-container">
+      <!-- 3 icons -->
+      <a href="https://github.com/thechutrain" target="_blank">
+        <img src="assets/images/github_icon.svg" alt="github icon">
+      </a>
+      <a href="https://www.linkedin.com/in/alan-chu-25736012a?trk=nav_responsive_tab_profile_pic" target="_blank">
+        <img src="assets/images/linkedin_icon.svg" alt="linkedin icon">
+      </a>
+      <a href="http://stackoverflow.com/users/3134917/thechutrain" target="_blank">
+        <img id="icon-adjust" src="assets/images/stackoverflow_icon.svg" alt="stackoverflow icon">
+      </a>
+      <!-- <a href="#"><img src="holder.js/50x50"></a> -->
+      <!-- <a href="#"><img src="holder.js/50x50"></a>       -->
+    </div>
+
+  </aside>
+</div>
+
+<!-- footer -->
+<footer>&copy; 2016 Alan Chu</footer>
+</body>
+</html>
