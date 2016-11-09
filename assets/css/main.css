@@ -29,8 +29,8 @@ Layout - header + nav
 */
 .header {
   background: #ffffff;
-  height: 50px;
-  overflow: auto;
+  display: inline-block;
+  width: 100%;
 }
 .header:after{
   clear: both;
@@ -84,8 +84,13 @@ nav > ul > li > a {
   font-size: 18px;
   padding: 10px 30px 10px 0px;
 }
+nav > ul > li > a:visited {
+  color: gray;
+}
 nav > ul > li > a:hover {
   cursor: pointer;
+  color: #4aaaa5;
+  font-weight: 600;
 }
 /*header{
   margin-left: 50px;
@@ -201,6 +206,11 @@ h3{
   line-height: 14px;
 }
 
+p{
+  line-height: 24px;
+  font-size: 1.05em;
+}
+
 /*
 =============================================
 About.html page
@@ -305,8 +315,10 @@ img {
 Media queries
 =============================================
 */
-/* Small view port width*/
+/* Large view port width*/
 @media screen and (max-width: 980px){
+
+
   footer{
     background: red;
   }
@@ -320,13 +332,63 @@ Media queries
 }
 
 
-/* Large view port width*/
+/* Small view port width*/
 @media screen and (max-width: 640px){
-  section{
-    width: 90%;
-    margin: 25px auto;
+
+  /* Header styling */
+  .header{
+    min-height: 50px;
+  }
+  .logo-wrapper{
+    width: 100%;
+    margin: 0;
+  }
+  .logo-name{
+    width: 100%;
+  }
+  .nav-wrapper{
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Body styling */
+  .section-wrapper, .aside-wrapper {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  section, aside {
+    width: 100%;
+    margin: 0;
+  }
+  #about-me > img {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .container {
+    margin-bottom: 30px;
+  }
+
+  /* font sizing */
+  p{
+    font-size: 1.25em;
+    line-height: 24px;
+  }
+  h2{
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  h3{
+    font-size: 28px;
+    line-height: 24px;
   }
   footer{
     background: green;
   }
+  
 }
