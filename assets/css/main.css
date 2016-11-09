@@ -79,7 +79,7 @@ nav > ul > li:last-child > a {
 }
 nav > ul > li > a {
   display: inline-block;
-  border-right: 3px gray solid;
+  border-right: 2px gray solid;
   text-decoration: none;
   font-size: 18px;
   padding: 10px 30px 10px 0px;
@@ -299,3 +299,34 @@ section{
 img {
   border: 2px dashed brown;
 }*/
+
+/*
+=============================================
+Media queries
+=============================================
+*/
+/* Small view port width*/
+@media screen and (max-width: 980px){
+  footer{
+    background: red;
+  }
+}
+
+/* Medium view port width*/
+@media screen and (max-width: 768px){
+  footer{
+    background: blue;
+  }
+}
+
+
+/* Large view port width*/
+@media screen and (max-width: 640px){
+  section{
+    width: 90%;
+    margin: 25px auto;
+  }
+  footer{
+    background: green;
+  }
+}
